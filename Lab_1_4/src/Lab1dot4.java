@@ -35,57 +35,53 @@ public class Lab1dot4 {
         boolean Boo2 = true;
 
         System.out.println("++++++++");
-        System.out.println((B1 + B2));
-        System.out.println((S1 + S2));
-        System.out.println((I1 + I2));
-        System.out.println((L1 + L2));
-        System.out.println((F1 + F2));
-        System.out.println((D1 + D2));
-        System.out.println((C1 + C2));
-//        System.out.println((Boo1 + Boo2));
+        System.out.println("byte: " + (B1 + B2));
+        System.out.println("short: " + (S1 + S2));
+        System.out.println("int: " + (I1 + I2));
+        System.out.println("long: " + (L1 + L2));
+        System.out.println("float: " + (F1 + F2));
+        System.out.println("double: " + (D1 + D2));
+        System.out.println("char: " + (C1 + C2));
+//        System.out.println("boolean " + (Boo1 + Boo2));
 
         System.out.println("--------");
-        System.out.println((B1 - B2));
-        System.out.println((S1 - S2));
-        System.out.println((I1 - I2));
-        System.out.println((L1 - L2));
-        System.out.println((F1 - F2));
-        System.out.println((D1 - D2));
-        System.out.println((C1 - C2));
-//        System.out.println((Boo1 + Boo1));
+        System.out.println("byte: " + (B1 - B2));
+        System.out.println("short: " + (S1 - S2));
+        System.out.println("int: " + (I1 - I2));
+        System.out.println("long: " + (L1 - L2));
+        System.out.println("float: " + (F1 - F2));
+        System.out.println("double: " + (D1 - D2));
+        System.out.println("char: " + (C1 - C2));
+//        System.out.println("boolean " + (Boo1 + Boo2));
 
         System.out.println("********");
-        System.out.println((B1 * B2));
-        System.out.println((S1 * S2));
-        System.out.println((I1 * I2));
-        System.out.println((L1 * L2));
-        System.out.println((F1 * F2));
-        System.out.println((D1 * D2));
-        System.out.println((C1 * C2));
-//        System.out.println((Boo1 + Boo2));
+        System.out.println("byte: " + (B1 - B2));
+        System.out.println("short: " + (S1 - S2));
+        System.out.println("int: " + (I1 - I2));
+        System.out.println("long: " + (L1 - L2));
+        System.out.println("float: " + (F1 - F2));
+        System.out.println("double: " + (D1 - D2));
+        System.out.println("char: " + (C1 - C2));
+//        System.out.println("boolean " + (Boo1 + Boo2));
 
         System.out.println("//////////");
-        System.out.println((B1 / B2));
-        System.out.println((S1 / S2));
-        System.out.println((I1 / I2));
-        System.out.println((L1 / L2));
-        System.out.println((F1 / F2));
-        System.out.println((D1 / D2));
-        System.out.println((C1 / C2));
-//        System.out.println((Boo1 + Boo2));
+        System.out.println("byte: " + (B1 + B2));
+        System.out.println("short: " + (S1 + S2));
+        System.out.println("int: " + (I1 + I2));
+        System.out.println("long: " + (L1 + L2));
+        System.out.println("float: " + (F1 + F2));
+        System.out.println("double: " + (D1 + D2));
+        System.out.println("char: " + (C1 + C2));
+//        System.out.println("boolean " + (Boo1 + Boo2));
 
         System.out.println("%%%%%%%%%%");
-        System.out.println((B1 % B2));
-        System.out.println((S1 % S2));
-        System.out.println((I1 % I2));
-        System.out.println((L1 % L2));
-        System.out.println((F1 % F2));
-        System.out.println((D1 % D2));
-        System.out.println((C1 % C2));
-//        System.out.println((Boo1 + Boo2));
-
-
-
-
+        System.out.println("byte: " + (B1 + B2));
+        System.out.println("short: " + (S1 + S2));
+        System.out.println("int: " + (I1 + I2));
+        System.out.println("long: " + (L1 + L2));
+        System.out.println("float: " + (F1 + F2));
+        System.out.println("double: " + (D1 + D2));
+        System.out.println("char: " + (C1 + C2));
+//        System.out.println("boolean " + (Boo1 + Boo2));
     }
 }
