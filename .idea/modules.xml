@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BrainAcademyLAB.iml" filepath="$PROJECT_DIR$/BrainAcademyLAB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lab_1_4/Lab_1_4.iml" filepath="$PROJECT_DIR$/Lab_1_4/Lab_1_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_1_4_1/Lab_1_4_1.iml" filepath="$PROJECT_DIR$/Lab_1_4_1/Lab_1_4_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_1_4_2/Lab_1_4_2.iml" filepath="$PROJECT_DIR$/Lab_1_4_2/Lab_1_4_2.iml" />
     </modules>
   </component>
 </project>
