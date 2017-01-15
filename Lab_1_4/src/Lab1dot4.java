@@ -8,6 +8,7 @@ public class Lab1dot4 {
     public static void main(String[] args) {
 
 // Lab 1.4.1
+//
 // Write a console program prints on console each of the primitive data types
 // (byte, short, int, long, float, double, char, boolean).
 
