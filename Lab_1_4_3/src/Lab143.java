@@ -35,23 +35,5 @@ public class Lab143 {
         System.out.println("false XOR true  = " + (F ^ T));
         System.out.println("true  XOR false = " + (T ^ F));
         System.out.println("true  XOR true  = " + (T ^ T));
-
-
-
-
-
-        // AND,
-
-
-        // OR,
-
-
-        // NOT,
-
-
-        // XOR
-
-
-
     }
 }
