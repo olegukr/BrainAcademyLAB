@@ -4,7 +4,6 @@
  * Write a console program that prints result
  * of each of arithmetic logical (AND, OR, NOT, XOR)
  * for two variables of boolean data type.
-<<<<<<< HEAD
  *
 =======
 >>>>>>> branch_20_22
