@@ -2,6 +2,12 @@
  *
  * Write a console program that prints result
  * of bit shift operators for integer variable.
+ * * Student should declare and initialize
+ * two integer variables as same value.
+ * Student should apply bit shift operators
+ * to first variable and divide or multiply
+ * (by power of two) arithmetic operators for
+ * second value, each time print result to console
  *
  * Created by olegpoberezhets on 20.01.17.
  */

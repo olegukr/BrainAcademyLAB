@@ -6,7 +6,7 @@
  *
  * Created by olegpoberezhets on 20.01.17.
  */
-public class Lab146 {
+public class Lab147 {
     public static void main(String[] args) {
         int a = 10;
         int b = 11;
