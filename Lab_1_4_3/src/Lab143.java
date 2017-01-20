@@ -5,8 +5,6 @@
  * of each of arithmetic logical (AND, OR, NOT, XOR)
  * for two variables of boolean data type.
  *
-=======
->>>>>>> branch_20_22
  */
 public class Lab143 {
     public static void main(String[] args) {
