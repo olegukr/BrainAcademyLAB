@@ -13,22 +13,71 @@
  */
 public class Lab145 {
     public static void main(String[] args) {
+        System.out.println("--------------------------------------------");
 
-        int a = 0b0000_1100;
-        int b = 0b0000_1100;
+        int a = 0b1111_1111__0000_0000__1111_1111_0000_1100;
+        int b = 0b1111_1111__0000_0000__1111_1111_0000_1100;
+
         System.out.println("a:         " + Integer.toBinaryString(a));
         System.out.println("b:         " + Integer.toBinaryString(b));
 
-        System.out.println("==========");
         a >>= 2;
         b = b / 4;
-        System.out.println("a >> 2:      " + Integer.toBinaryString(a));
-        System.out.println("b = b / 4:   " + Integer.toBinaryString(b));
+        System.out.println("a >> 2:    " + Integer.toBinaryString(a));
+        System.out.println("b = b / 4: " + Integer.toBinaryString(b));
+        System.out.println("--------------------------------------------");
+/*
 
-        System.out.println("==========");
+        --------------------------------------------
+        a:         11111111000000001111111100001100
+        b:         11111111000000001111111100001100
+        a >> 2:    11111111110000000011111111000011
+        b = b / 4: 11111111110000000011111111000011
+        --------------------------------------------
+
+*/
+        System.out.println();
+        System.out.println("--------------------------------------------");
+
+        a = 0b1111_1111__0000_0000__1111_1111_0000_1100;
+        b = 0b1111_1111__0000_0000__1111_1111_0000_1100;
+
+        System.out.println("a:         " + Integer.toBinaryString(a));
+        System.out.println("b:         " + Integer.toBinaryString(b));
+
         a <<= 2;
         b = b * 4;
         System.out.println("a << 2:    " + Integer.toBinaryString(a));
         System.out.println("b = b * 4: " + Integer.toBinaryString(b));
+        System.out.println("--------------------------------------------");
+
+/*
+        --------------------------------------------
+        a:         11111111000000001111111100001100
+        b:         11111111000000001111111100001100
+        a << 2:    11111100000000111111110000110000
+        b = b * 4: 11111100000000111111110000110000
+        --------------------------------------------
+*/
+
+        System.out.println();
+        System.out.println("--------------------------------------------");
+        a = 0b1111_1111__0000_0000__1111_1111_0000_1100;
+        b = 0b1111_1111__0000_0000__1111_1111_0000_1100;
+        System.out.println("a:         " + Integer.toBinaryString(a));
+        System.out.println("b:         " + Integer.toBinaryString(b));
+
+        a >>>= 2;
+        b = b / 4;
+        System.out.println("a >>> 2:     " + Integer.toBinaryString(a));
+        System.out.println("b = b / 4: " + Integer.toBinaryString(b));
+        System.out.println("--------------------------------------------");
+
+/*      --------------------------------------------
+        a:         11111111000000001111111100001100
+        b:         11111111000000001111111100001100
+        a >>> 2:   00111111110000000011111111000011
+        b = b / 4: 11111111110000000011111111000011
+*/
     }
 }
