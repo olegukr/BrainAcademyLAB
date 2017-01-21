@@ -1,7 +1,7 @@
 /**
- *
  * Write a program to produce the multiplication table
  * of 1 to 9 as shown using two nested for-loops:
+ *
  * * | 1 2 3 4 5 6 7 8 9
  * --------------------------------------
  * 1 | 1 2 3 4 5 6 7 8 9
@@ -19,21 +19,28 @@
 public class Lab153 {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            System.out.println();
-            if (i == 0) {
-                System.out.print("* | ");
-            } else if (i == 1) {
+            if (i != 0) {
+                System.out.println();
+            }
+            int nRow = i;
+            if (i == 1) {
                 System.out.println("------------------------------");
-                System.out.print(i + " | ");
-            } else {
-                System.out.print(i + " | ");
             }
             for (int j = 0; j < 10; j++) {
+                int nColumn = j;
 
-                    System.out.print(j + " ");
+                if (nColumn == 0) {
+                    if (nRow == 0) {
+                        System.out.print("* | ");
+                    } else {
+                        System.out.print(nRow + " | ");
+                    }
+                } else if (nRow == 0) {
+                    System.out.print(nColumn + " ");
+                } else {
+                    System.out.print(nColumn * nRow + " ");
                 }
-
-
+            }
         }
     }
 }
