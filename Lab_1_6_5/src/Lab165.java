@@ -1,5 +1,6 @@
 /**
- * Write a program, which transpose matrix (2d arrays, size 4x4) and outputs it to the console
+ * Write a program, which transpose matrix (2d arrays, size 4x4)
+ * and outputs it to the console
  * <p>
  * Created by olegpoberezhets on 27.01.17.
  */
