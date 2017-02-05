@@ -16,15 +16,6 @@ public class MyWindow {
     private String color;
     private boolean isOpen;
 
-    MyWindow(double width, double height, int numberoOfGlass,
-             String color, boolean isOpen) {
-        this.width = width;
-        this.height = height;
-        this.numberoOfGlass = numberoOfGlass;
-        this.color = color;
-        this.isOpen = isOpen;
-    }
-
     MyWindow() {
         this.width = 70.0;
         this.height = 120.0;
@@ -42,6 +33,15 @@ public class MyWindow {
         this.width = width;
         this.height = height;
         this.numberoOfGlass = numberoOfGlass;
+    }
+
+    MyWindow(double width, double height, int numberoOfGlass,
+             String color, boolean isOpen) {
+        this.width = width;
+        this.height = height;
+        this.numberoOfGlass = numberoOfGlass;
+        this.color = color;
+        this.isOpen = isOpen;
     }
 
     public void printFields() {

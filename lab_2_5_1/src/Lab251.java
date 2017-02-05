@@ -15,4 +15,5 @@
  * Created by olegpoberezhets on 05.02.17.
  */
 public class Lab251 {
+
 }
