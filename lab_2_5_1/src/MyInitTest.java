@@ -42,3 +42,10 @@ public class MyInitTest {
     }
 
 }
+//     output:
+//        static initialization block 1
+//        static initialization block 2
+//        non-static initialization block 1
+//        non-static initialization block 2
+//        constructor 2
+//        constructor 1

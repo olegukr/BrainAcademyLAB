@@ -12,12 +12,18 @@ import java.util.Random;
  * to print values of their arrays on console.
  * Example of output: 23,43,11,34,78,59,34,61,24,2 5,48,50,3,1,4,67,62,78,98
  *
+ * 253:
+ * Change MyInit class: * change MyInit field arr to static field. Compile and run. What will you see and why?
+ *
+ * 254:
+ * Change MyInit class: * change initialization block to static initialization block. Compile and run. What will you see and why?
+ *
  * Created by olegpoberezhets on 05.02.17.
  */
 public class MyInit {
     static int[] arr = new int[10];
 
-    {
+    static {
         for (int i = 0; i < arr.length; i++) {
             arr[i]= (int) (100 * Math.random());
         }
