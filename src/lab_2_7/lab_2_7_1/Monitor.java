@@ -5,12 +5,12 @@ package lab_2_7.lab_2_7_1;
  */
 public class Monitor extends Device {
     int resolutionX;
-    int getResolutionY;
+    int ResolutionY;
 
-    public Monitor(String manufacturer, float price, String serialNumber, int resolutionX, int getResolutionY) {
+    public Monitor(String manufacturer, float price, String serialNumber, int resolutionX, int ResolutionY) {
         super(manufacturer, price, serialNumber);
         this.resolutionX = resolutionX;
-        this.getResolutionY = getResolutionY;
+        this.ResolutionY = ResolutionY;
     }
 
     @Override
@@ -21,7 +21,7 @@ public class Monitor extends Device {
         Monitor monitor = (Monitor) o;
 
         if (resolutionX != monitor.resolutionX) return false;
-        return getResolutionY == monitor.getResolutionY;
+        return ResolutionY == monitor.ResolutionY;
     }
 
     @Override
@@ -31,11 +31,11 @@ public class Monitor extends Device {
 
     @Override
     public String toString() {
-        return "Monitor{" +
-                "manufacturer='" + manufacturer + '\'' +
-                ", resolutionX=" + resolutionX +
-                ", price=" + price +
-                ", getResolutionY=" + getResolutionY +
+        return  super.toString() +
+//                "manufacturer='" + manufacturer + '\'' +
+//                ", resolutionX=" + resolutionX +
+//                ", price=" + price +
+                ", getResolutionY=" + ResolutionY +
                 ", serialNumber='" + serialNumber + '\'' +
                 '}';
     }
@@ -49,10 +49,10 @@ public class Monitor extends Device {
     }
 
     public int getGetResolutionY() {
-        return getResolutionY;
+        return ResolutionY;
     }
 
     public void setGetResolutionY(int getResolutionY) {
-        this.getResolutionY = getResolutionY;
+        this.ResolutionY = getResolutionY;
     }
 }

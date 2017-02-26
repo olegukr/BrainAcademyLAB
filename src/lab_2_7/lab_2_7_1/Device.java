@@ -16,7 +16,7 @@ public class Device {
 
     @Override
     public String toString() {
-        return "Device{" +
+        return getClass().getSimpleName() + "{" +
                 "manufacturer='" + manufacturer + '\'' +
                 ", price=" + price +
                 ", serialNumber='" + serialNumber + '\'' +
@@ -33,6 +33,14 @@ public class Device {
         if (Float.compare(device.price, price) != 0) return false;
         if (!manufacturer.equals(device.manufacturer)) return false;
         return serialNumber.equals(device.serialNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = manufacturer != null ? manufacturer.hashCode() : 0;
+        result = 31 * result + (price != +0.0f ? Float.floatToIntBits(price) : 0);
+        result = 31 * result + (serialNumber != null ? serialNumber.hashCode() : 0);
+        return result;
     }
 
     public String getManufacturer() {
