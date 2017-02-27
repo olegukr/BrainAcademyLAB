@@ -15,14 +15,7 @@ public class EthernetAdapter extends Device {
 
     @Override
     public String toString() {
-        return  super.toString() +
-//                "EthernetAdapter{" +
-//                "manufacturer='" + manufacturer + '\'' +
-//                ", speed=" + speed +
-//                ", price=" + price +
-                ", mac='" + mac + '\'' +
-                ", serialNumber='" + serialNumber + '\'' +
-                '}';
+        return  super.toString() + ", price=" + price + ", mac='" + mac + '\'' + ", serialNumber='" + serialNumber;
     }
 
     @Override

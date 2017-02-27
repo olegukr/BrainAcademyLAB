@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Device[] devices = new Device[0];
 
-        devices = addDeviceToDevices(devices, new Monitor("Philips", 234.00F ,  "323" , 1980, 1020));
-        devices = addDeviceToDevices(devices, new EthernetAdapter("Intel", 120.00F, "212",1000, "00:00:01:E4:2F:23"));
+        devices = addDeviceToDevices(devices, new Monitor("Philips", 234.00F ,  "323CN45F" , 1980, 1020));
+        devices = addDeviceToDevices(devices, new EthernetAdapter("Intel", 120.00F, "K212DS67",1000, "00:01:91:E4:2F:23"));
         for (Device device : devices) {
             System.out.println(device.toString());
 
