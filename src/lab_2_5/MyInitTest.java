@@ -1,3 +1,5 @@
+package lab_2_5;
+
 /**
  * Create class MyInitTest with two initialization blocks,
  * two static initialization blocks and two constructors (one constructor()

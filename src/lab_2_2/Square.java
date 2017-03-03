@@ -1,3 +1,4 @@
+package lab_2_2;
 /**
  * Write class with method that will take final integer
  * and assign to it the square of this integer and print result.

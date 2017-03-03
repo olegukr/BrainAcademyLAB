@@ -1,3 +1,5 @@
+package lab_2_6;
+
 /**
  * Create project MyCalc.
  * Create class Main with main() method in package com.brainacad.calc.

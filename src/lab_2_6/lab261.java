@@ -1,3 +1,5 @@
+package lab_2_6;
+
 /**
  *
  * Create a project with structure:

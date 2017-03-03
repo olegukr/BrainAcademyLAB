@@ -1,3 +1,5 @@
+package lab_1_6;
+
 /**
  * Write a program, which creates square matrix like those in the figure below
  * and prints them formatted to the console. The size of the matrix is 4 x 4:

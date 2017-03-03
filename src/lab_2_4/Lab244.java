@@ -1,3 +1,5 @@
+package lab_2_4;
+
 /**
  * 1) Create Employee class with fields firstName, lastName, occupation, telephone and static field numberOfEmployees and getters/setters.
  * 2) Class must have constructor, which will initialize class fields and increment numberOfEmployees.

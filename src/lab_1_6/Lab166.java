@@ -1,3 +1,5 @@
+package lab_1_6;
+
 import com.sun.org.apache.xml.internal.serializer.utils.StringToIntTable;
 
 /**

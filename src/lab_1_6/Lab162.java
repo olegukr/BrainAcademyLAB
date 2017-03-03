@@ -1,3 +1,5 @@
+package lab_1_6;
+
 /**
  * There are statistics for the year by months
  * as an array: int[] m = new int[] { 10, 21, 5, 22, 9, 29, 25, 22, 11, 14, 8, 14 };

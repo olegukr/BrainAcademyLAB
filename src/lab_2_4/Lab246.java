@@ -1,3 +1,5 @@
+package lab_2_4;
+
 /**
  * Write a class MyPyramid with public static method printPyramid(int h)
  * that takes parameter an integer h between 1 and 9,

@@ -1,3 +1,5 @@
+package lab_2_3;
+
 /**
  * 1) Create class MyWindow with fields width (of double type), height (of double type),
  * numberOfGlass(of int type), color(of String type), isOpen(boolean).

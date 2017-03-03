@@ -1,3 +1,5 @@
+package lab_2_5;
+
 import java.util.Random;
 
 /**

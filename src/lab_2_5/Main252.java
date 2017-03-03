@@ -1,3 +1,5 @@
+package lab_2_5;
+
 /**
  * Created by olegpoberezhets on 05.02.17.
  */

@@ -1,3 +1,4 @@
+package lab_2_2;
 /**
  * Create a Matrix class that contains the methods of addition and multiplication of matrices
  * (work with two-dimensional arrays);

@@ -1,3 +1,5 @@
+package lab_2_2;
+
 /**
  * Write class A with overridden methods calcSquare
  * that calculate square of rectangle, square of foursquare

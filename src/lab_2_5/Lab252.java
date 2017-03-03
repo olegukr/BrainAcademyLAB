@@ -1,3 +1,5 @@
+package lab_2_5;
+
 /**
  *
  * Create class MyInit with field arr of array of integers

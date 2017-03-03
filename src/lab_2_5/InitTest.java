@@ -1,3 +1,5 @@
+package lab_2_5;
+
 /**
  * Write class InitTest with private field id of int type and static private field nextId of integer.
  * Write code that:

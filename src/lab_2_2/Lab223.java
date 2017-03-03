@@ -1,3 +1,4 @@
+package lab_2_2;
 /**
  *
  * Write class Employee with method calcSalary with argument name(String) and varargs salary(double…).

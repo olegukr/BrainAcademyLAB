@@ -1,3 +1,5 @@
+package lab_1_6;
+
 /**
  *
  * Write a program, which uses a binary search

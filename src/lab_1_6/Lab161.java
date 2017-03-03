@@ -1,3 +1,5 @@
+package lab_1_6;
+
 /**
  *
  * Create an array of all the even numbers from 2 to 30 (2,4,6...30)

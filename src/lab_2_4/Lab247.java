@@ -1,3 +1,5 @@
+package lab_2_4;
+
 /**
  * Write a program that computes the distance an object will fall in Earth's gravity.
  * Create a new class called GravityCalculator with method calcDist(double time)

@@ -1,3 +1,5 @@
+package lab_1_6;
+
 import com.sun.org.apache.xpath.internal.functions.FuncFalse;
 
 /**

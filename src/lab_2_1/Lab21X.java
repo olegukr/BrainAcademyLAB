@@ -1,3 +1,7 @@
+package lab_2_1;
+
+import lab_2_1.Computer;
+
 /**
  *
  * Write a program to create array of Computer objects (5 pcs.).

@@ -1,3 +1,5 @@
+package lab_2_4;
+
 /**
  * 2.4.1:
  * Create class MyMath with two static methods (findMin and findMax),

@@ -1,3 +1,5 @@
+package lab_2_4;
+
 /**
  * 2.4.4:
  * 1) Create Employee class with fields firstName, lastName, occupation, telephone

@@ -1,3 +1,7 @@
+package lab_2_5;
+
+import lab_2_5.MyInitTest;
+
 /**
  * Created by olegpoberezhets on 05.02.17.
  */

@@ -1,3 +1,4 @@
+package lab_2_2;
 /**
  *
  * Create class Person with fields firstName(String), lastName(String), age(int), gender(String), phoneNumber(int),
