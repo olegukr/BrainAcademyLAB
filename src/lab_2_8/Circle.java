@@ -14,7 +14,7 @@ package lab_2_8;
  “Shape area is: 314.15926”
  * Created by olegpoberezhets on 26.02.17.
  */
-public class Circle extends Shape {
+public class Circle extends Shape implements Comparable{
     private double radius;
     private String shapeColor;
 
@@ -36,5 +36,13 @@ public class Circle extends Shape {
     public double calcArea() {
         double area  = Math.PI*radius*radius;
         return area;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Circle circle = (Circle) o;
+        if (this.calcArea() > circle.calcArea()) return 1;
+        if (this.calcArea() < circle.calcArea()) return -1;
+        return 0;
     }
 }

@@ -3,7 +3,7 @@ package lab_2_8;
 /**
  * Created by olegpoberezhets on 27.02.17.
  */
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Comparable{
     private String shapeColor;
     private double width;
     private double height;
@@ -27,5 +27,12 @@ public class Rectangle extends Shape {
                 ", color: " + shapeColor +
                 ", width=" + width +
                 ", height=" + height;
+    }
+    @Override
+    public int compareTo(Object o) {
+        Rectangle rectangle = (Rectangle) o;
+        if (this.calcArea() > rectangle.calcArea()) return 1;
+        if (this.calcArea() < rectangle.calcArea()) return -1;
+        return 0;
     }
 }
