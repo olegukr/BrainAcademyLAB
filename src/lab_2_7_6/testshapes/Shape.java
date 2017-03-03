@@ -1,7 +1,7 @@
 package lab_2_7_6.testshapes;
 
 /**
- * Create new project named MyShapes. Add package “lab_2_7_6.testshapes”.
+ * Create new project named MyShapes. Add package “lab_2_7_6.lab_2_8”.
  You should design a super class Shape, which defines the public method of all
  the shapes called calcArea(), which returns the area (double type) of that particular shape.
  (Our program uses many kinds of shapes, such as triangle, rectangle and so on.)
