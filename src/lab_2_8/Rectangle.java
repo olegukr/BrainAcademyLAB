@@ -1,9 +1,11 @@
 package lab_2_8;
 
+import java.util.Comparator;
+
 /**
  * Created by olegpoberezhets on 27.02.17.
  */
-public class Rectangle extends Shape implements Comparable{
+public class Rectangle extends Shape implements Comparable, Comparator {
     private String shapeColor;
     private double width;
     private double height;
@@ -35,4 +37,17 @@ public class Rectangle extends Shape implements Comparable{
         if (this.calcArea() < rectangle.calcArea()) return -1;
         return 0;
     }
+
+    public String getShapeColor() {
+        return shapeColor;
+    }
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        Rectangle rectangle1 = (Rectangle) o1;
+        Rectangle rectangle2 = (Rectangle) o2;
+        return  rectangle1.getShapeColor().compareTo(rectangle2.getShapeColor());
+    }
+
+
 }

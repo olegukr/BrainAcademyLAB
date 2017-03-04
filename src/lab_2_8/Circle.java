@@ -1,5 +1,7 @@
 package lab_2_8;
 
+import java.util.Comparator;
+
 /**
  * 1) Add to project  MyShapes a new class Circle which is a subclass of Shape.
  Add to class Circle a private field radius (of double type).
@@ -14,7 +16,7 @@ package lab_2_8;
  “Shape area is: 314.15926”
  * Created by olegpoberezhets on 26.02.17.
  */
-public class Circle extends Shape implements Comparable{
+public class Circle extends Shape implements Comparable, Comparator {
     private double radius;
     private String shapeColor;
 
@@ -41,8 +43,23 @@ public class Circle extends Shape implements Comparable{
     @Override
     public int compareTo(Object o) {
         Circle circle = (Circle) o;
-        if (this.calcArea() > circle.calcArea()) return 1;
-        if (this.calcArea() < circle.calcArea()) return -1;
+        if (this.calcArea() > circle.calcArea()) {
+            return 1;
+        }
+        if (this.calcArea() < circle.calcArea()) {
+            return -1;
+        }
         return 0;
+    }
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        Circle circle1 = (Circle) o1;
+        Circle circle2 = (Circle) o2;
+        return  circle1.getShapeColor().compareTo(circle2.getShapeColor());
+    }
+
+    public String getShapeColor() {
+        return shapeColor;
     }
 }

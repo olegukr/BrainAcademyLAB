@@ -1,9 +1,11 @@
 package lab_2_8;
 
+import java.util.Comparator;
+
 /**
  * Created by olegpoberezhets on 26.02.17.
  */
-public class Triangle extends Shape implements Comparable {
+public class Triangle extends Shape implements Comparable, Comparator {
     private String shapeColor;
     private double a;
     private double b;
@@ -39,5 +41,16 @@ public class Triangle extends Shape implements Comparable {
         if (this.calcArea() > triangle.calcArea()) return 1;
         if (this.calcArea() < triangle.calcArea()) return -1;
         return 0;
+    }
+
+    public String getShapeColor() {
+        return shapeColor;
+    }
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        Triangle triangle1 = (Triangle) o1;
+        Triangle triangle2 = (Triangle) o2;
+        return triangle1.getShapeColor().compareTo(triangle2.getShapeColor());
     }
 }
