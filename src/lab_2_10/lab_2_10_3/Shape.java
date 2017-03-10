@@ -48,33 +48,37 @@ public abstract class Shape implements Drawable {
 
             //  “Rectangle:RED:10,20”;
             case "Rectangle":
-                shape = new Rectangle(
-                        (s.substring(s.indexOf(":")+1, s.lastIndexOf(":"))),                     // "RED"
-                        Double.parseDouble(s.substring(s.lastIndexOf(":")+1, s.indexOf(","))),   // "10"
-                        Double.parseDouble(s.substring(s.lastIndexOf(",")+1))                    // "20"
-                );
+//                shape = new Rectangle(
+//                        (s.substring(s.indexOf(":")+1, s.lastIndexOf(":"))),                     // "RED"
+//                        Double.parseDouble(s.substring(s.lastIndexOf(":")+1, s.indexOf(","))),   // "10"
+//                        Double.parseDouble(s.substring(s.lastIndexOf(",")+1))                    // "20"
+//                );
+
+                shape = Rectangle.parseRectangle(s);
                 return shape;
 
-            //  “Triangle:GREEN:9,7,12”;
+
+                //  “Triangle:GREEN:9,7,12”;
             case "Triangle":
+//                shape = new Triangle(
+//                        (s.substring(s.indexOf(":") + 1, s.lastIndexOf(":"))),                     // "GREEN"
+//                        Double.parseDouble(s.substring(s.lastIndexOf(":") + 1, s.indexOf(","))),   // "9"
+//                        Double.parseDouble(s.substring(s.indexOf(",") + 1, s.lastIndexOf(","))),    // "7"
+//                        Double.parseDouble(s.substring(s.lastIndexOf(",") + 1))                      // "12"
+//                );
 
-                shape = new Triangle(
-                        (s.substring(s.indexOf(":")+1, s.lastIndexOf(":"))),                     // "GREEN"
-                        Double.parseDouble(s.substring(s.lastIndexOf(":")+1, s.indexOf(","))),   // "9"
-                        Double.parseDouble(s.substring(s.indexOf(",")+1, s.lastIndexOf(","))),    // "7"
-                        Double.parseDouble(s.substring(s.lastIndexOf(",")+1))                            // "12"
-                );
+                shape =  Triangle.parseTriangle(s);
                 return shape;
-
 
 
             //  “Circle:BLACK:10”
             case "Circle":
-                shape = new Circle((s.substring(s.indexOf(":")+1, s.lastIndexOf(":"))),           // "BLACK"
-                        Double.parseDouble(s.substring(s.lastIndexOf(":")+1))                     // "10"
-                );              
-                return shape;
+//                shape = new Circle((s.substring(s.indexOf(":") + 1, s.lastIndexOf(":"))),           // "BLACK"
+//                        Double.parseDouble(s.substring(s.lastIndexOf(":") + 1))                     // "10"
+//                );
 
+                shape = Circle.parseCircle(s);
+                return shape;
         }
         return shape;
     }

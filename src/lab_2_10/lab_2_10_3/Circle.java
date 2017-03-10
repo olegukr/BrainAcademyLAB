@@ -62,4 +62,14 @@ public class Circle extends Shape implements Comparable, Comparator {
     public String getShapeColor() {
         return shapeColor;
     }
+
+    public static Circle parseCircle( String s) {
+
+        Circle circle = new Circle((s.substring(s.indexOf(":")+1, s.lastIndexOf(":"))),
+            Double.parseDouble(s.substring(s.lastIndexOf(":")+1))
+            );
+                return circle;
+
+}
+
 }

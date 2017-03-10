@@ -22,74 +22,75 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        Shape[] shapes = new Shape[3];
-
-        shapes[0] = new Circle("GREEN", 10.0);
-        shapes[1] = new Rectangle("RED", 11.0, 22.0);
-        shapes[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
-
-        for (Shape shape : shapes) {
-            shape.draw();
-        }
-        System.out.println("--------");
-
-        Rectangle rectangle1 = new Rectangle("WHITE", 5.0, 6.0);
-        Rectangle rectangle2 = new Rectangle("WHITE", 7.0, 8.0);
-        System.out.println("rectangle1 - " + rectangle1.toString());
-        System.out.println("rectangle2 - " + rectangle2.toString());
-        System.out.print("rectangle1 area " + rectangle1.calcArea());
-        int result = rectangle1.compareTo(rectangle2);
-        switch (result) {
-            case -1:
-                System.out.print(" less ");
-                break;
-            case 0:
-                System.out.print(" equal ");
-                break;
-            case 1:
-                System.out.print(" more ");
-        }
-        System.out.println("rectangle2 area " + rectangle2.calcArea());
-        System.out.println("--------");
-
-        Rectangle[] arr2 = new Rectangle[6];
-        arr2[0] = new Rectangle("RED", 10.0, 10.0);
-        arr2[1] = new Rectangle("RED", 50.0, 6.0);
-        arr2[2] = new Rectangle("RED", 11.0, 22.0);
-        arr2[3] = new Rectangle("RED", 30.0, 4.0);
-        arr2[4] = new Rectangle("RED", 20.0, 25.0);
-        arr2[5] = new Rectangle("RED", 20.0, 2.0);
-        Arrays.sort(arr2);
-        for (Shape rectangle : arr2) {
-            rectangle.draw();
-        }
-        System.out.println("--------");
-
-
-        Shape[] shapesManyColors = new Shape[10];
-
-        shapesManyColors[0] = new Circle("BROWN", 10.0);
-        shapesManyColors[1] = new Rectangle("BLUE", 11.0, 22.0);
-        shapesManyColors[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
-        shapesManyColors[3] = new Circle("PINK", 10.0);
-        shapesManyColors[4] = new Rectangle("YELLOW", 11.0, 22.0);
-        shapesManyColors[5] = new Triangle("BLUE", 5.0, 5.0, 5.0);
-        shapesManyColors[6] = new Circle("GRAY", 10.0);
-        shapesManyColors[7] = new Rectangle("CYAN", 11.0, 22.0);
-        shapesManyColors[8] = new Triangle("ORANGE", 5.0, 5.0, 5.0);
-        shapesManyColors[9] = new Circle("GREEN", 10.0);
-
-        Arrays.sort(shapesManyColors, new ShapeColorComparator());
-
-        for (Shape shapesManyColor : shapesManyColors) {
-            shapesManyColor.draw();
-        }
+//        Shape[] shapes = new Shape[3];
+//
+//        shapes[0] = new Circle("GREEN", 10.0);
+//        shapes[1] = new Rectangle("RED", 11.0, 22.0);
+//        shapes[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
+//
+//        for (Shape shape : shapes) {
+//            shape.draw();
+//        }
+//        System.out.println("--------");
+//
+//        Rectangle rectangle1 = new Rectangle("WHITE", 5.0, 6.0);
+//        Rectangle rectangle2 = new Rectangle("WHITE", 7.0, 8.0);
+//        System.out.println("rectangle1 - " + rectangle1.toString());
+//        System.out.println("rectangle2 - " + rectangle2.toString());
+//        System.out.print("rectangle1 area " + rectangle1.calcArea());
+//        int result = rectangle1.compareTo(rectangle2);
+//        switch (result) {
+//            case -1:
+//                System.out.print(" less ");
+//                break;
+//            case 0:
+//                System.out.print(" equal ");
+//                break;
+//            case 1:
+//                System.out.print(" more ");
+//        }
+//        System.out.println("rectangle2 area " + rectangle2.calcArea());
+//        System.out.println("--------");
+//
+//        Rectangle[] arr2 = new Rectangle[6];
+//        arr2[0] = new Rectangle("RED", 10.0, 10.0);
+//        arr2[1] = new Rectangle("RED", 50.0, 6.0);
+//        arr2[2] = new Rectangle("RED", 11.0, 22.0);
+//        arr2[3] = new Rectangle("RED", 30.0, 4.0);
+//        arr2[4] = new Rectangle("RED", 20.0, 25.0);
+//        arr2[5] = new Rectangle("RED", 20.0, 2.0);
+//        Arrays.sort(arr2);
+//        for (Shape rectangle : arr2) {
+//            rectangle.draw();
+//        }
+//        System.out.println("--------");
+//
+//
+//        Shape[] shapesManyColors = new Shape[10];
+//
+//        shapesManyColors[0] = new Circle("BROWN", 10.0);
+//        shapesManyColors[1] = new Rectangle("BLUE", 11.0, 22.0);
+//        shapesManyColors[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
+//        shapesManyColors[3] = new Circle("PINK", 10.0);
+//        shapesManyColors[4] = new Rectangle("YELLOW", 11.0, 22.0);
+//        shapesManyColors[5] = new Triangle("BLUE", 5.0, 5.0, 5.0);
+//        shapesManyColors[6] = new Circle("GRAY", 10.0);
+//        shapesManyColors[7] = new Rectangle("CYAN", 11.0, 22.0);
+//        shapesManyColors[8] = new Triangle("ORANGE", 5.0, 5.0, 5.0);
+//        shapesManyColors[9] = new Circle("GREEN", 10.0);
+//
+//        Arrays.sort(shapesManyColors, new ShapeColorComparator());
+//
+//        for (Shape shapesManyColor : shapesManyColors) {
+//            shapesManyColor.draw();
+//        }
 
         System.out.println(Shape.parseShape("Rectangle:RED:10,20"));
         System.out.println(Shape.parseShape("Triangle:GREEN:9,7,12"));
         System.out.println(Shape.parseShape("Circle:BLACK:10"));
 
     }
+
 //output:
 //    This is Circle, color: GREEN, radius=10.0, aria is: 314.1592653589793
 //    This is Rectangle, color: RED, width=11.0, height=22.0, aria is: 242.0

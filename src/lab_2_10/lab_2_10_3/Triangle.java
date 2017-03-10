@@ -53,4 +53,16 @@ public class Triangle extends Shape implements Comparable, Comparator {
         Triangle triangle2 = (Triangle) o2;
         return triangle1.getShapeColor().compareTo(triangle2.getShapeColor());
     }
+
+    public static Triangle parseTriangle( String s) {
+
+        Triangle triangle;
+        triangle = new Triangle(
+                (s.substring(s.indexOf(":") + 1, s.lastIndexOf(":"))),
+                Double.parseDouble(s.substring(s.lastIndexOf(":") + 1, s.indexOf(","))),
+                Double.parseDouble(s.substring(s.indexOf(",") + 1, s.lastIndexOf(","))),
+                Double.parseDouble(s.substring(s.lastIndexOf(",") + 1))
+        );
+        return triangle;
+    }
 }
