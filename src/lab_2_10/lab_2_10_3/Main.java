@@ -2,6 +2,7 @@ package lab_2_10.lab_2_10_3;
 
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Open project MyShapes (from 2.8 labs).
@@ -89,6 +90,18 @@ public class Main {
         System.out.println(Shape.parseShape("Triangle:GREEN:9,7,12"));
         System.out.println(Shape.parseShape("Circle:BLACK:10"));
 
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int i = Integer.parseInt(str);
+        Shape[] shapes = new Shape[i];
+        for (int i1 = 0; i1 < shapes.length; i1++) {
+            Scanner scanner = new Scanner(System.in);
+            String string = scanner.nextLine();
+            shapes[i1] = Shape.parseShape(string);
+            shapes[i1].draw();
+        }
+
+
     }
 
 //output:
@@ -117,5 +130,18 @@ public class Main {
 //    This is Triangle, color: ORANGE, a=5.0, b=5.0, c=5.0, aria is: 10.825317547305483
 //    This is Circle, color: PINK, radius=10.0, aria is: 314.1592653589793
 //    This is Rectangle, color: YELLOW, width=11.0, height=22.0, aria is: 242.0
+
+//
+//    This is Rectangle, color: RED, width=10.0, height=20.0
+//    This is Triangle, color: GREEN, a=9.0, b=7.0, c=12.0
+//    This is Circle, color: BLACK, radius=10.0
+
+//    3
+//    Rectangle:RED:11,22
+//    This is Rectangle, color: RED, width=11.0, height=22.0, aria is: 242.0
+//    Triangle:BLACK:5,5,5
+//    This is Triangle, color: BLACK, a=5.0, b=5.0, c=5.0, aria is: 10.825317547305483
+//    Circle:GREEN:10
+//    This is Circle, color: GREEN, radius=10.0, aria is: 314.1592653589793
 
 }
