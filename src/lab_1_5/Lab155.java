@@ -18,9 +18,7 @@ public class Lab155 {
         while (scanner.hasNextInt()) {
             int n = scanner.nextInt();
             int sumIs = 0;
-            for (int i = 1; i <= n; i++) {
-                sumIs = sumIs + i;
-            }
+            for (int i = 1; i <= n; i++) sumIs = sumIs + i;
             float avgIs = (float) sumIs / n;
             System.out.println("The Sum is: " + sumIs);
             System.out.println("The Avg is: " + avgIs);

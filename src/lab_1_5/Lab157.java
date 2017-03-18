@@ -18,14 +18,8 @@ public class Lab157 {
 
             for (int i = 1; i < n; i++) {
                 int sumReminder = 0;
-                for (int j = 1; j < i; j++) {
-                    if (i % j == 0) {
-                        sumReminder = sumReminder + i;
-                    }
-                }
-                if (sumReminder == i) {
-                    System.out.println(sumReminder);
-                }
+                for (int j = 1; j < i; j++) if (i % j == 0) sumReminder = sumReminder + i;
+                if (sumReminder == i) System.out.println(sumReminder);
             }
         }
 

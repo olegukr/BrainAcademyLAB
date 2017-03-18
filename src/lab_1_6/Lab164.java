@@ -21,11 +21,8 @@ public class Lab164 {
         do {
             arrIndex = (int) (indexMax + indexMin) / 2;
             numerOfSirch++;
-            if (searchElement < arr1[arrIndex]) {
-                indexMax = arrIndex - 1;
-            } else if (searchElement > arr1[arrIndex]) {
-                indexMin = arrIndex + 1;
-            }
+            if (searchElement < arr1[arrIndex]) indexMax = arrIndex - 1;
+            else if (searchElement > arr1[arrIndex]) indexMin = arrIndex + 1;
             if (indexMin > indexMax) {
                 System.out.print("Not found. Near element ");
                 break;
@@ -34,12 +31,10 @@ public class Lab164 {
 
         System.out.println("arr1[" + arrIndex + "] = " + arr1[arrIndex]);
 
-        for (int i=1; arr1[arrIndex]==arr1[arrIndex-i]; i++) {
-            System.out.println("arr1[" + (arrIndex-i) + "] = " + arr1[arrIndex-i]);
-        }
-        for (int i=1; arr1[arrIndex]==arr1[arrIndex+i]; i++) {
-            System.out.println("arr1[" + (arrIndex+i) + "] = " + arr1[arrIndex+i]);
-        }
+        for (int i=1; arr1[arrIndex]==arr1[arrIndex-i]; i++)
+            System.out.println("arr1[" + (arrIndex - i) + "] = " + arr1[arrIndex - i]);
+        for (int i=1; arr1[arrIndex]==arr1[arrIndex+i]; i++)
+            System.out.println("arr1[" + (arrIndex + i) + "] = " + arr1[arrIndex + i]);
         System.out.println("Количество циклов: " + numerOfSirch);
 
     }

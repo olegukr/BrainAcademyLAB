@@ -32,9 +32,7 @@ public class InitTest {
 
     static {
         nextId = (int) (Math.random() * 1000);
-        if (nextId < 1) {
-            nextId = nextId + 1;
-        }
+        if (nextId < 1) nextId = nextId + 1;
     }
 
     public void InitTest() {

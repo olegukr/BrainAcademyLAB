@@ -37,9 +37,7 @@ public class Lab231 {
         windows[2] = new MyWindow(75.0,125.0, 4);
         windows[3] = new MyWindow(75.0, 125.0, 4, "red" , true );
 
-        for (MyWindow window : windows) {
-            window.printFields();
-        }
+        for (MyWindow window : windows) window.printFields();
 
 
     }

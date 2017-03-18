@@ -1,4 +1,4 @@
-package lab_2_10.lab_2_10_3;
+package lab_2_11.lab_2_11_4;
 
 import java.util.Comparator;
 
@@ -59,7 +59,7 @@ public class Circle extends Shape implements Comparable, Comparator {
         return shapeColor;
     }
 
-    public static Circle parseCircle( String s) {
+    public static Circle parseCircle(String s) {
 
         Circle circle = new Circle((s.substring(s.indexOf(":")+1, s.lastIndexOf(":"))),
             Double.parseDouble(s.substring(s.lastIndexOf(":")+1))

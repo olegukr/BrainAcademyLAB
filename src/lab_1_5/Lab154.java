@@ -17,14 +17,11 @@ public class Lab154 {
     public static void main(String[] args) {
 
         int qNumbers = 10;
-        for (int i = 1; i <= 300 ; i++) {
-            if ((i % 3 == 0 )|| (i % 4 == 0)) {
+        for (int i = 1; i <= 300 ; i++)
+            if ((i % 3 == 0) || (i % 4 == 0)) {
                 System.out.println(i);
                 qNumbers--;
-                if (qNumbers == 0) {
-                    break;
-                }
+                if (qNumbers == 0) break;
             }
-        }
     }
 }

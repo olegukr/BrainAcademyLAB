@@ -21,27 +21,16 @@ package lab_1_5;
 public class Lab153 {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            if (i != 0) {
-                System.out.println();
-            }
+            if (i != 0) System.out.println();
             int nRow = i;
-            if (i == 1) {
-                System.out.println("------------------------------");
-            }
+            if (i == 1) System.out.println("------------------------------");
             for (int j = 0; j < 10; j++) {
                 int nColumn = j;
 
-                if (nColumn == 0) {
-                    if (nRow == 0) {
-                        System.out.print("* | ");
-                    } else {
-                        System.out.print(nRow + " | ");
-                    }
-                } else if (nRow == 0) {
-                    System.out.print(nColumn + " ");
-                } else {
-                    System.out.print(nColumn * nRow + " ");
-                }
+                if (nColumn == 0) if (nRow == 0) System.out.print("* | ");
+                else System.out.print(nRow + " | ");
+                else if (nRow == 0) System.out.print(nColumn + " ");
+                else System.out.print(nColumn * nRow + " ");
             }
         }
     }

@@ -24,17 +24,11 @@ public class Lab167 {
         for (int i = 0; i < arr1.length; i++) {
             System.out.print("Line " + (i+1) + ":[");
             boolean First = true;
-            for (int i1 = 0; i1 < arr1[i].length; i1++) {
-
-                if (arr1[i][i1] == nn) {
-                    if ( First ) {
-                        System.out.print(i1);
-                        First = false;
-                    } else {
-                        System.out.print("," + i1);
-                    }
-                }
-            }
+            for (int i1 = 0; i1 < arr1[i].length; i1++)
+                if (arr1[i][i1] == nn) if (First) {
+                    System.out.print(i1);
+                    First = false;
+                } else System.out.print("," + i1);
             System.out.println("]");
         }
     }

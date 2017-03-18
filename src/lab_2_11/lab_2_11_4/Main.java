@@ -1,7 +1,6 @@
-package lab_2_10.lab_2_10_3;
+package lab_2_11.lab_2_11_4;
 
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -67,24 +66,24 @@ public class Main {
 //        System.out.println("--------");
 //
 //
-        Shape[] shapesManyColors = new Shape[10];
-
-        shapesManyColors[0] = new Circle("BROWN", 10.0);
-        shapesManyColors[1] = new Rectangle("BLUE", 11.0, 22.0);
-        shapesManyColors[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
-        shapesManyColors[3] = new Circle("PINK", 10.0);
-        shapesManyColors[4] = new Rectangle("YELLOW", 11.0, 22.0);
-        shapesManyColors[5] = new Triangle("BLUE", 5.0, 5.0, 5.0);
-        shapesManyColors[6] = new Circle("GRAY", 10.0);
-        shapesManyColors[7] = new Rectangle("CYAN", 11.0, 22.0);
-        shapesManyColors[8] = new Triangle("ORANGE", 5.0, 5.0, 5.0);
-        shapesManyColors[9] = new Circle("GREEN", 10.0);
-
-        Arrays.sort(shapesManyColors, new ShapeColorComparator());
-
-        for (Shape shapesManyColor : shapesManyColors) {
-            shapesManyColor.draw();
-        }
+//        Shape[] shapesManyColors = new Shape[10];
+//
+//        shapesManyColors[0] = new Circle("BROWN", 10.0);
+//        shapesManyColors[1] = new Rectangle("BLUE", 11.0, 22.0);
+//        shapesManyColors[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
+//        shapesManyColors[3] = new Circle("PINK", 10.0);
+//        shapesManyColors[4] = new Rectangle("YELLOW", 11.0, 22.0);
+//        shapesManyColors[5] = new Triangle("BLUE", 5.0, 5.0, 5.0);
+//        shapesManyColors[6] = new Circle("GRAY", 10.0);
+//        shapesManyColors[7] = new Rectangle("CYAN", 11.0, 22.0);
+//        shapesManyColors[8] = new Triangle("ORANGE", 5.0, 5.0, 5.0);
+//        shapesManyColors[9] = new Circle("GREEN", 10.0);
+//
+//        Arrays.sort(shapesManyColors, new ShapeColorComparator());
+//
+//        for (Shape shapesManyColor : shapesManyColors) {
+//            shapesManyColor.draw();
+//        }
 
         System.out.println(Shape.parseShape("Rectangle:RED:10,20"));
         System.out.println(Shape.parseShape("Triangle:GREEN:9,7,12"));

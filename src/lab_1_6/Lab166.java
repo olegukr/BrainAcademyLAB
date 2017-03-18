@@ -25,22 +25,17 @@ public class Lab166 {
 
         String tempMonth;
         String tempTemp;
-        for (int k=0; k < avrgTempByMonths.length; k++) {
-
-            for (int i = avrgTempByMonths.length - 1; i > k; i--) {
-
-                if (Integer.valueOf(avrgTempByMonths[i-1][1]) > Integer.valueOf(avrgTempByMonths[i][1])) {
-                    tempMonth = avrgTempByMonths[i-1][0];
-                    tempTemp = avrgTempByMonths[i-1][1];
-                    avrgTempByMonths[i-1][0] = avrgTempByMonths[i][0];
-                    avrgTempByMonths[i-1][1] = avrgTempByMonths[i][1];
+        for (int k=0; k < avrgTempByMonths.length; k++)
+            for (int i = avrgTempByMonths.length - 1; i > k; i--)
+                if (Integer.valueOf(avrgTempByMonths[i - 1][1]) > Integer.valueOf(avrgTempByMonths[i][1])) {
+                    tempMonth = avrgTempByMonths[i - 1][0];
+                    tempTemp = avrgTempByMonths[i - 1][1];
+                    avrgTempByMonths[i - 1][0] = avrgTempByMonths[i][0];
+                    avrgTempByMonths[i - 1][1] = avrgTempByMonths[i][1];
                     avrgTempByMonths[i][0] = tempMonth;
                     avrgTempByMonths[i][1] = tempTemp;
                 }
-            }
-        }
-        for (int i = 0; i < avrgTempByMonths.length; i++) {
+        for (int i = 0; i < avrgTempByMonths.length; i++)
             System.out.println(avrgTempByMonths[i][0] + ": " + avrgTempByMonths[i][1]);
-        }
     }
 }

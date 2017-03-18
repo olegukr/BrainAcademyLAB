@@ -18,9 +18,7 @@ public class Main {
         shapes[1] = new Rectangle("RED", 11.0, 22.0);
         shapes[2] = new Triangle("BLACK", 5.0, 5.0, 5.0);
 
-        for (Shape shape : shapes) {
-            shape.draw();
-        }
+        for (Shape shape : shapes) shape.draw();
         System.out.println("--------");
 
         Rectangle rectangle1 = new Rectangle("WHITE", 5.0, 6.0);
@@ -50,9 +48,7 @@ public class Main {
         arr2[4] = new Rectangle("RED", 20.0, 25.0);
         arr2[5] = new Rectangle("RED", 20.0, 2.0);
         Arrays.sort(arr2);
-        for (Shape rectangle : arr2) {
-            rectangle.draw();
-        }
+        for (Shape rectangle : arr2) rectangle.draw();
         System.out.println("--------");
 
 
@@ -71,9 +67,7 @@ public class Main {
 
         Arrays.sort(shapesManyColors, new ShapeColorComparator());
 
-        for (Shape shapesManyColor : shapesManyColors) {
-            shapesManyColor.draw();
-        }
+        for (Shape shapesManyColor : shapesManyColors) shapesManyColor.draw();
 
 
     }

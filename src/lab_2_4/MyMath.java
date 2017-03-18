@@ -27,22 +27,14 @@ public class MyMath {
     public static int findMin(int[] arr) {
 
         int minValue = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < minValue) {
-                minValue = arr[i];
-            }
-        }
+        for (int i = 0; i < arr.length; i++) if (arr[i] < minValue) minValue = arr[i];
         return minValue;
     }
 
     public static int findMax(int[] arr) {
 
         int maxValue = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > maxValue) {
-                maxValue = arr[i];
-            }
-        }
+        for (int i = 0; i < arr.length; i++) if (arr[i] > maxValue) maxValue = arr[i];
         return maxValue;
     }
 

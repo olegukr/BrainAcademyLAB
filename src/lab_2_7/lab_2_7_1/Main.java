@@ -11,10 +11,7 @@ public class Main {
 
         devices = addDeviceToDevices(devices, new Monitor("Philips", 234.00F ,  "323CN45F" , 1980, 1020));
         devices = addDeviceToDevices(devices, new EthernetAdapter("Intel", 120.00F, "K212DS67",1000, "00:01:91:E4:2F:23"));
-        for (Device device : devices) {
-            System.out.println(device.toString());
-
-        }
+        for (Device device : devices) System.out.println(device.toString());
     }
 
         public static Device[] addDeviceToDevices(Device[] devices, Device newDevice) {

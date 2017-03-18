@@ -17,9 +17,7 @@ public class Lab21X {
             computers[i] = new Computer("Mac", 231312 + i, 4, 2, 2000);
             computers[i].setPrice(100 + 100 * computers[i].getQuantityCPU());
         }
-        for (Computer computer : computers) {
-            computer.viewCompute();
-        }
+        for (Computer computer : computers) computer.viewCompute();
         System.out.println();
 
         for (Computer computer : computers) {

@@ -26,16 +26,12 @@ public class MyInit {
     static int[] arr = new int[10];
 
     static {
-        for (int i = 0; i < arr.length; i++) {
-            arr[i]= (int) (100 * Math.random());
-        }
+        for (int i = 0; i < arr.length; i++) arr[i] = (int) (100 * Math.random());
 
     }
 
     public static void printArray(){
-        for (int i = 0; i < arr.length ; i++) {
-            System.out.print(arr[i] + ", ");
-        }
+        for (int i = 0; i < arr.length ; i++) System.out.print(arr[i] + ", ");
 
     }
 }

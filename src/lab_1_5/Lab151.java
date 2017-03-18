@@ -17,9 +17,7 @@ package lab_1_5;
 public class Lab151 {
     public static void main(String[] args) {
        for (int k = 1; k < 9; k++) {
-           for (int i = k; i > 0; i--) {
-               System.out.print(i + " ");
-           }
+           for (int i = k; i > 0; i--) System.out.print(i + " ");
            System.out.println();
        }
     }

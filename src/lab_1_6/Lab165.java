@@ -17,18 +17,15 @@ public class Lab165 {
             System.out.println(" ");
         }
         int b = 0;
-        for (int i = 0; i < arr1.length; i++) {
+        for (int i = 0; i < arr1.length; i++)
             for (int i1 = 0 + i; i1 < arr1[i].length; i1++) {
                 b = arr1[i1][i];
                 arr1[i1][i] = arr1[i][i1];
                 arr1[i][i1] = b;
             }
-        }
         System.out.println();
         for (int i1 = 0; i1 < arr1.length; i1++) {
-            for (int i2 = 0; i2 < arr1.length; i2++) {
-                System.out.print(arr1[i1][i2] + " ");
-            }
+            for (int i2 = 0; i2 < arr1.length; i2++) System.out.print(arr1[i1][i2] + " ");
             System.out.println();
         }
 

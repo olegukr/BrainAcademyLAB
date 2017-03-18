@@ -15,10 +15,7 @@ public class Employee {
     public double calcSalary(String name, double... salaries) {
 
         double totalSalary = 0;
-        for (int i = 0; i < salaries.length; i++) {
-
-            totalSalary = totalSalary + salaries[i];
-        }
+        for (int i = 0; i < salaries.length; i++) totalSalary = totalSalary + salaries[i];
         System.out.println("Total salary of " + name + ": " + totalSalary);
         return totalSalary;
     }

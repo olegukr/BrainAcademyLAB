@@ -14,11 +14,8 @@ public class MyCalc {
 
         for (int i = 0; i < n; i++) {
             b = 4.0 / (2*i + 1.0);
-            if (i % 2 != 0) {
-                pi -= b;
-            } else {
-                pi += b;
-            }
+            if (i % 2 != 0) pi -= b;
+            else pi += b;
         }
         return pi;
     }
