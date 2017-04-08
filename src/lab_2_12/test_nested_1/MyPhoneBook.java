@@ -1,4 +1,4 @@
-package lab_2_12.lab_2_12_1;
+package lab_2_12.test_nested_1;
 
 import java.util.Arrays;
 import java.util.Comparator;

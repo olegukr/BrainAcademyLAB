@@ -1,6 +1,5 @@
 package lab_2_7_6.testshapes;
 
-
 /**
  * Created by olegpoberezhets on 26.02.17.
  */
@@ -21,6 +20,4 @@ public class Main {
         System.out.println("This is " + shape.toString());
         System.out.println(  "Shape area is: " + shape.calcArea());
     }
-
-
 }

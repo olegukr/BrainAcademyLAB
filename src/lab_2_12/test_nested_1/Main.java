@@ -1,9 +1,4 @@
-package lab_2_12.lab_2_12_1;
-
-import lab_2_11.testexcp1.MyException;
-
-import java.util.Arrays;
-import java.util.Comparator;
+package lab_2_12.test_nested_1;
 
 /**
  * Created by olegpoberezhets on 12.03.17.
@@ -33,6 +28,11 @@ public class Main {
         System.out.println("-----");
         myPhoneBook.sortByPhoneNumber();
         myPhoneBook.printPhoneBook();
+
+        MyPhone myPhone = new MyPhone();
+        myPhone.switchOn();
+        myPhone.call(1 );
     }
 }
+
 
