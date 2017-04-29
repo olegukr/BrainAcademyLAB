@@ -1,0 +1,16 @@
+Write a class called PrintFile whose main(String[] args) method reads all the text from the file mentioned on the command-line (args[0]) line-by-line and prints it to standard out.
+
+Preparation
+
+No special preparation
+
+Execution\ methodology
+Remind that student should apply his or her knowledge of: • how to use classes FileReader, BufferedReader;
+Execute following steps:
+• Student should create a new blank Java Project in IDE.
+• Student should create his or her own Java class and provide all necessary code in
+a method main()
+• Open a FileReader and then wrap it with a BufferedReader so you can use
+method readLine() to get a line of input.
+• Note that readLine() strips the '\n' character off the end of the line so
+use System.out.println() to split the lines out.
